@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Product name here",
+      "price": 10,
+      "description": "Description here",
+      "product": "Product type here",
+      "color": "Color here",
+      "createdAt": "Date here",
+      "image": "Image URL"
+    }
+  ]
+}
