@@ -15,6 +15,7 @@ const getData = async (apiUrl) => {
 };
 const getPost = async (postId) => {
   try {
+    //todo : sao mình không viết hàm getData ở trên để có thể sử dụng ở chỗ này luôn em nhỉ ? 
     const getpostById = fetch(
       `https://jsonplaceholder.typicode.com/posts/${postId}`
     );
@@ -26,6 +27,7 @@ const getPost = async (postId) => {
       getCommentsOfPostId,
     ]).then((data) => Promise.all(data.map((r) => r.json())));
 
+    //todo: chỗ này mình có thể xử dụng phần operator có viết trong docs training để nó ngắn gọn và tường minh hơn nhé 
     return {
       userId: post.userId,
       id: post.id,
@@ -51,16 +53,16 @@ const getPost = async (postId) => {
   ]);
 
   //  3
+  //todo : có thể viết thế này cho ngắn và dê hiểu hơn nhé . Tham khảo nhé .
   const result = users.map((item, index) => {
-    let tempPosts = posts.filter((it, idx) => item.id === it.userId);
-    let tempComments = comments.filter((it, idx) => item.email === it.email);
+    const {id,name,username,email} = item
     return {
-      id: item.id,
-      name: item.name,
-      username: item.username,
-      email: item.email,
-      comments: tempComments,
-      posts: tempPosts,
+      id,
+      name,
+      username,
+      email,
+      comments: posts.filter((it, idx) => item.id === it.userId),
+      posts: comments.filter((it, idx) => item.email === it.email),
     };
   });
   console.log(result);
@@ -70,6 +72,7 @@ const getPost = async (postId) => {
   console.log(usersWithMoreThan3Comments);
 
   //5. Reformat the data with the count of comments and posts
+  //todo: thay vì làm thế này thử làm theo spread/rest operator xem oke hơn không nhé ? 
   const reformatData = result.map((item, index) => {
     item.commentsCount = item.comments.length;
     item.postsCount = item.posts.length;
@@ -78,11 +81,14 @@ const getPost = async (postId) => {
     return item;
   });
 
+
+  //todo bài này có cách này viết ngắn hơn và hạn chế dùng forEach đc không ? 
   //6. Who is the user with the most comments/posts
   let [userWithMostComments, userWithMostPosts] = [
     reformatData[0],
     reformatData[0],
   ];
+ 
 
   reformatData.forEach((item, index) => {
     if (item.commentsCount > userWithMostComments.commentsCount)
