@@ -26,8 +26,7 @@ function createNewProduct(data) {
  * @param id
  */
 function updateProductById(id, data) {
-  const updatedProduct = { ...getProductById(id), data };
-
+  const updatedProduct = { ...getProductById(id), ...data };
   return updatedProduct;
 }
 

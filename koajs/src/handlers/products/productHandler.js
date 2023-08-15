@@ -61,7 +61,7 @@ async function getProduct(ctx) {
 async function createProduct(ctx) {
   try {
     const data = ctx.request.body;
-    createNewProduct(data);
+    createNewProduct({ ...data, createdAt: new Date().toISOString() });
     ctx.status = 201;
     return (ctx.body = {
       success: true,
