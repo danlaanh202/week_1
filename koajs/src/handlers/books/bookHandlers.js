@@ -76,4 +76,4 @@ async function save(ctx) {
   }
 }
 
-export { getBooks, getBook, save };
+export default { getBooks, getBook, save };

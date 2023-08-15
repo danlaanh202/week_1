@@ -1,5 +1,5 @@
 import fs from "fs";
-import * as products from "./products.json";
+const { data: products } = require("./products.json");
 /**
  *
  * @returns {[{name: string, price: number, id: number, description: string, product: string, color: string, createdAt: string, image: string}]}

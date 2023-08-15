@@ -101,4 +101,10 @@ async function deleteProduct(ctx) {
   }
 }
 
-export { getProducts, getProduct, createProduct, updateProduct, deleteProduct };
+export default {
+  getProducts,
+  getProduct,
+  createProduct,
+  updateProduct,
+  deleteProduct,
+};

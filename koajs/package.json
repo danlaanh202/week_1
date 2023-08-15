@@ -2,12 +2,13 @@
   "name": "koajs",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "dev": "nodemon lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-babel": "babel -d ./build ./src -s",
-    "build": " npm run build-babel",
-    "dev": "npm run build && node ./build/index.js"
+    "production": "babel src --out-dir lib --copy-files --include-dotfiles",
+    "development": "babel src --out-dir lib --copy-files --source-maps --include-dotfiles",
+    "watch": "babel src --out-dir lib --copy-files --source-maps --include-dotfiles --watch --verbose"
   },
   "keywords": [],
   "author": "",

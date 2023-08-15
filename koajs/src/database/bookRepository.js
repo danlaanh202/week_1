@@ -1,5 +1,5 @@
 import fs from "fs";
-import * as books from "./books.json";
+const { data: books } = require("./books.json");
 
 /**
  *
