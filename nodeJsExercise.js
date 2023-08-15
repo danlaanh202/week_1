@@ -1,14 +1,7 @@
 const rootApiUrl = "https://jsonplaceholder.typicode.com";
-
-//todo : sao không tích hợp nó luôn vào hàm getData ? 
 const postsApiUrl = rootApiUrl + "/posts";
 const commentsApiUrl = rootApiUrl + "/comments";
 const usersApiUrl = rootApiUrl + "/users";
-// const apiUrl = [
-//   "https://jsonplaceholder.typicode.com/users",
-//   "https://jsonplaceholder.typicode.com/posts",
-//   "https://jsonplaceholder.typicode.com/comments",
-// ];
 
 const getData = async (apiUrl) => {
   try {
@@ -48,9 +41,9 @@ const getPost = async (postId) => {
 (async () => {
   // get all users, posts and comments
   const [users, posts, comments] = await Promise.all([
-    getData(rootApiUrl + "/users"),
-    getData(rootApiUrl + "/posts"),
-    getData(rootApiUrl + "/comments"),
+    getData(usersApiUrl),
+    getData(postsApiUrl),
+    getData(commentsApiUrl),
   ]);
 
   //  3

@@ -1,12 +1,24 @@
-const fs = require("fs");
-const { data: products } = require("./products.json");
+import fs from "fs";
+import { data as products } from "./products.json";
 /**
  *
  * @returns {[{name: string, price: number, id: number, description: string, product: string, color: string, createdAt: string, image: string}]}
  */
-function getAllProducts() {
+function getProducts(limit, sort) {
+  if (sort) {
+    products =
+      sort === "asc"
+        ? products.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+        : products.sort(
+            (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+          );
+  }
+  if (limit) {
+    products = products.slice(0, limit);
+  }
   return products;
 }
+
 /**
  *
  * @param {id: number,name: string,price: number,description: string,product: string,color: string,createdAt: string,image: string}
@@ -63,27 +75,10 @@ function getProductById(id) {
   return products.find((product) => product.id === parseInt(id));
 }
 
-function getProductsWithFilter(limit, sort = "asc") {
-  //todo : tìm cách giảm bớt else if tại có thể  bỏ sót các th , tìm cách dùng mình if thôi chẳng hạn
-  // thêm nữa là anh thấy sort với slice đang dùng đi dùng lại mà lại 1 cùng 1 mục đúc có thể nào tách ra cho đỡ if else và dùng sort hoặc slice 1 đến 2 lần không ? 
-  if (sort === "asc") {
-    return products
-      .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
-      .slice(0, limit || products.length);
-  } else if (sort === "desc") {
-    return products
-      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-      .slice(0, limit || products.length);
-  } else {
-    return products.slice(0, limit || products.length);
-  }
-}
-
-module.exports = {
+export {
   getProductById,
-  getAllProducts,
+  getProducts,
   createNewProduct,
   updateProductById,
   deleteProductById,
-  getProductsWithFilter,
 };

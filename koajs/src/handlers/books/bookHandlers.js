@@ -1,8 +1,8 @@
-const {
-  getAll: getAllBooks,
-  getOne: getOneBook,
-  add: addBook,
-} = require("../../database/bookRepository");
+import {
+  getAll as getAllBooks,
+  getOne as getOneBook,
+  add as addBook,
+} from "../../database/bookRepository";
 
 /**
  *
@@ -76,8 +76,4 @@ async function save(ctx) {
   }
 }
 
-module.exports = {
-  getBooks,
-  getBook,
-  save,
-};
+export { getBooks, getBook, save };

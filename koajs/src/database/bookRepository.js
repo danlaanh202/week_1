@@ -1,5 +1,5 @@
-const fs = require("fs");
-const { data: books } = require("./books.json");
+import fs from "fs";
+import { data as books } from "./books.json";
 
 /**
  *
@@ -32,8 +32,4 @@ function add(data) {
   );
 }
 
-module.exports = {
-  getOne,
-  getAll,
-  add,
-};
+export { getOne, getAll, add };

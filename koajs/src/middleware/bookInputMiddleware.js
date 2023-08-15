@@ -1,4 +1,4 @@
-const yup = require("yup");
+import yup from "yup";
 
 async function bookInputMiddleware(ctx, next) {
   try {
@@ -21,4 +21,4 @@ async function bookInputMiddleware(ctx, next) {
   }
 }
 
-module.exports = bookInputMiddleware;
+export default bookInputMiddleware;

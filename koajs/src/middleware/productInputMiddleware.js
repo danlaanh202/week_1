@@ -1,4 +1,4 @@
-const yup = require("yup");
+import yup from "yup";
 
 async function productInputMiddleware(ctx, next) {
   try {
@@ -25,4 +25,4 @@ async function productInputMiddleware(ctx, next) {
   }
 }
 
-module.exports = productInputMiddleware;
+export default productInputMiddleware;

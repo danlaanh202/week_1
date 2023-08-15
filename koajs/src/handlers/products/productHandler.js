@@ -1,12 +1,10 @@
-//todo: tìm  cách dùng import em nhé 
-const {
+import {
   getProductById,
-  getAllProducts,
+  getProducts as getProductsWithFilter,
   createNewProduct,
   updateProductById,
   deleteProductById,
-  getProductsWithFilter,
-} = require("../../database/productRepository");
+} from "../../database/productRepository";
 /**
  *
  * @param ctx
@@ -15,16 +13,9 @@ const {
 async function getProducts(ctx) {
   try {
     const { limit, sort } = ctx.request.query;
-    //todo: mình tách 2 điều kiện này ra riêng nhé đôi khi viết thế này không phải th nào cũng ổn đâu .
-    if (limit || sort) {
-      const products = getProductsWithFilter(limit, sort);
-      ctx.status = 200;
-      return (ctx.body = {
-        data: products,
-      });
-    }
-    //todo : sao mình là phải tách riêng thế này khi có và không có filter nhỉ ? gộp lại chung đc không ? 
-    const products = getAllProducts();
+
+    const products = getProductsWithFilter(limit, sort);
+
     ctx.status = 200;
     return (ctx.body = {
       data: products,
@@ -110,10 +101,4 @@ async function deleteProduct(ctx) {
   }
 }
 
-module.exports = {
-  getProducts,
-  getProduct,
-  createProduct,
-  updateProduct,
-  deleteProduct,
-};
+export { getProducts, getProduct, createProduct, updateProduct, deleteProduct };
