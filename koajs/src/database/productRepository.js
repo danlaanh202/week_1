@@ -21,12 +21,23 @@ function createNewProduct(data) {
     })
   );
 }
-/**
- *
- * @param id
- */
+
 function updateProductById(id, data) {
-  const updatedProduct = { ...getProductById(id), ...data };
+  let arrayIndex;
+  const foundProduct = products.find((product, index) => {
+    if (product.id === parseInt(id)) {
+      arrayIndex = index;
+      return product;
+    }
+  });
+  const updatedProduct = { ...foundProduct, ...data };
+  products[arrayIndex] = updatedProduct;
+  fs.writeFileSync(
+    "./src/database/products.json",
+    JSON.stringify({
+      data: products,
+    })
+  );
   return updatedProduct;
 }
 
