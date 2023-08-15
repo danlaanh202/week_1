@@ -1,4 +1,6 @@
 const rootApiUrl = "https://jsonplaceholder.typicode.com";
+
+//todo : sao không tích hợp nó luôn vào hàm getData ? 
 const postsApiUrl = rootApiUrl + "/posts";
 const commentsApiUrl = rootApiUrl + "/comments";
 const usersApiUrl = rootApiUrl + "/users";
