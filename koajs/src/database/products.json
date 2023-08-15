@@ -1,254 +1,252 @@
-{
-  "data": [
-    {
-      "id": 1,
-      "name": "Áo phông cổ tròn",
-      "description": "Áo phông đơn giản và thoải mái",
-      "price": 250,
-      "product": "Áo thời trang",
-      "color": "Trắng",
-      "createdAt": "2023-08-14T10:00:00Z",
-      "image": "link_anh_1.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Quần jeans nam",
-      "description": "Quần jeans nam phong cách",
-      "price": 650,
-      "product": "Quần thời trang",
-      "color": "Xanh dương",
-      "createdAt": "2023-08-14T11:30:00Z",
-      "image": "link_anh_2.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Váy hoa nữ",
-      "description": "Váy hoa dịu dàng",
-      "price": 450,
-      "product": "Váy thời trang",
-      "color": "Hồng",
-      "createdAt": "2023-08-14T14:15:00Z",
-      "image": "link_anh_3.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Áo khoác nỉ unisex",
-      "description": "Áo khoác nỉ phong cách thể thao",
-      "price": 350,
-      "product": "Áo khoác",
-      "color": "Đen",
-      "createdAt": "2023-08-14T15:45:00Z",
-      "image": "link_anh_4.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Giày thể thao nam",
-      "description": "Giày thể thao nam thoải mái và bền",
-      "price": 800,
-      "product": "Giày thể thao",
-      "color": "Đỏ",
-      "createdAt": "2023-08-14T17:30:00Z",
-      "image": "link_anh_5.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Đầm dạ hội",
-      "description": "Đầm dạ hội sang trọng cho các sự kiện đặc biệt",
-      "price": 1200.0,
-      "product": "Váy dạ hội",
-      "color": "Đen",
-      "createdAt": "2023-08-15T09:00:00Z",
-      "image": "link_anh_6.jpg"
-    },
-    {
-      "id": 7,
-      "name": "Túi xách nữ da bò",
-      "description": "Túi xách nữ da bò cao cấp",
-      "price": 500.0,
-      "product": "Túi xách",
-      "color": "Nâu",
-      "createdAt": "2023-08-15T11:30:00Z",
-      "image": "link_anh_7.jpg"
-    },
-    {
-      "id": 8,
-      "name": "Áo sơ mi nữ",
-      "description": "Áo sơ mi nữ trẻ trung và thanh lịch",
-      "price": 320.0,
-      "product": "Áo sơ mi",
-      "color": "Xanh lá",
-      "createdAt": "2023-08-15T14:15:00Z",
-      "image": "link_anh_8.jpg"
-    },
-    {
-      "id": 9,
-      "name": "Quần legging thể thao",
-      "description": "Quần legging thể thao co dãn tốt",
-      "price": 180.0,
-      "product": "Quần legging",
-      "color": "Đen",
-      "createdAt": "2023-08-15T16:45:00Z",
-      "image": "link_anh_9.jpg"
-    },
-    {
-      "id": 10,
-      "name": "Áo khoác dù nữ",
-      "description": "Áo khoác dù nữ chống nước và ấm áp",
-      "price": 750.0,
-      "product": "Áo khoác",
-      "color": "Xanh đậm",
-      "createdAt": "2023-08-15T18:30:00Z",
-      "image": "link_anh_10.jpg"
-    },
-    {
-      "id": 11,
-      "name": "Áo len cổ lọ nữ",
-      "description": "Áo len cổ lọ nữ ấm áp cho mùa đông",
-      "price": 280.0,
-      "product": "Áo len",
-      "color": "Xám",
-      "createdAt": "2023-08-16T09:00:00Z",
-      "image": "link_anh_11.jpg"
-    },
-    {
-      "id": 12,
-      "name": "Váy chữ A nữ",
-      "description": "Váy chữ A nữ dễ thương và năng động",
-      "price": 380.0,
-      "product": "Váy thời trang",
-      "color": "Xanh nhạt",
-      "createdAt": "2023-08-16T11:30:00Z",
-      "image": "link_anh_12.jpg"
-    },
-    {
-      "id": 13,
-      "name": "Giày cao gót",
-      "description": "Giày cao gót đẹp và sang trọng",
-      "price": 950.0,
-      "product": "Giày thời trang",
-      "color": "Đen",
-      "createdAt": "2023-08-16T14:15:00Z",
-      "image": "link_anh_13.jpg"
-    },
-    {
-      "id": 14,
-      "name": "Túi xách nữ thời trang",
-      "description": "Túi xách nữ thời trang và tiện ích",
-      "price": 420.0,
-      "product": "Túi xách",
-      "color": "Xanh đậm",
-      "createdAt": "2023-08-16T16:45:00Z",
-      "image": "link_anh_14.jpg"
-    },
-    {
-      "id": 15,
-      "name": "Quần culottes nữ",
-      "description": "Quần culottes nữ thoải mái và dễ mix đồ",
-      "price": 300.0,
-      "product": "Quần thời trang",
-      "color": "Kem",
-      "createdAt": "2023-08-16T18:30:00Z",
-      "image": "link_anh_15.jpg"
-    },
-    {
-      "id": 16,
-      "name": "Áo blouse trắng",
-      "description": "Áo blouse trắng thanh lịch cho nữ",
-      "price": 220.0,
-      "product": "Áo thời trang",
-      "color": "Trắng",
-      "createdAt": "2023-08-17T09:00:00Z",
-      "image": "link_anh_16.jpg"
-    },
-    {
-      "id": 17,
-      "name": "Váy ngủ satin",
-      "description": "Váy ngủ satin mềm mại và quyến rũ",
-      "price": 150.0,
-      "product": "Đồ lót",
-      "color": "Đỏ",
-      "createdAt": "2023-08-17T11:30:00Z",
-      "image": "link_anh_17.jpg"
-    },
-    {
-      "id": 18,
-      "name": "Giày mọi nữ",
-      "description": "Giày mọi nữ thoải mái cho mùa hè",
-      "price": 280.0,
-      "product": "Giày thời trang",
-      "color": "Beige",
-      "createdAt": "2023-08-17T14:15:00Z",
-      "image": "link_anh_18.jpg"
-    },
-    {
-      "id": 19,
-      "name": "Áo hoodie nữ",
-      "description": "Áo hoodie nữ phong cách và ấm áp",
-      "price": 380.0,
-      "product": "Áo khoác",
-      "color": "Xám",
-      "createdAt": "2023-08-17T16:45:00Z",
-      "image": "link_anh_19.jpg"
-    },
-    {
-      "id": 20,
-      "name": "Quần jogger nữ",
-      "description": "Quần jogger nữ thể thao và thoải mái",
-      "price": 260,
-      "product": "Quần thể thao",
-      "color": "Đen",
-      "createdAt": "2023-08-17T18:30:00Z",
-      "image": "link_anh_20.jpg"
-    },
-    {
-      "id": 21,
-      "name": "Áo dài truyền thống",
-      "description": "Áo dài truyền thống Việt Nam phối màu hiện đại",
-      "price": 580,
-      "product": "Áo dài",
-      "color": "Xanh dương",
-      "createdAt": "2023-08-18T09:00:00Z",
-      "image": "link_anh_21.jpg"
-    },
-    {
-      "id": 22,
-      "name": "Váy xòe nữ",
-      "description": "Váy xòe nữ duyên dáng cho mùa hè",
-      "price": 320,
-      "product": "Váy thời trang",
-      "color": "Vàng",
-      "createdAt": "2023-08-18T11:30:00Z",
-      "image": "link_anh_22.jpg"
-    },
-    {
-      "id": 23,
-      "name": "Giày thể thao nữ",
-      "description": "Giày thể thao nữ phong cách và thoải mái",
-      "price": 780,
-      "product": "Giày thể thao",
-      "color": "Hồng",
-      "createdAt": "2023-08-18T14:15:00Z",
-      "image": "link_anh_23.jpg"
-    },
-    {
-      "id": 24,
-      "name": "Áo crop top nữ",
-      "description": "Áo crop top nữ năng động và trẻ trung",
-      "price": 180,
-      "product": "Áo thời trang",
-      "color": "Cam",
-      "createdAt": "2023-08-18T16:45:00Z",
-      "image": "link_anh_24.jpg"
-    },
-    {
-      "id": 25,
-      "name": "Quần short nữ",
-      "description": "Quần short nữ thời trang và thoải mái",
-      "price": 150,
-      "product": "Quần thể thao",
-      "color": "Xanh dương",
-      "createdAt": "2023-08-18T18:30:00Z",
-      "image": "link_anh_25.jpg"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Áo phông cổ tròn",
+    "description": "Áo phông đơn giản và thoải mái",
+    "price": 250,
+    "product": "Áo thời trang",
+    "color": "Trắng",
+    "createdAt": "2023-08-14T10:00:00Z",
+    "image": "link_anh_1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Quần jeans nam",
+    "description": "Quần jeans nam phong cách",
+    "price": 650,
+    "product": "Quần thời trang",
+    "color": "Xanh dương",
+    "createdAt": "2023-08-14T11:30:00Z",
+    "image": "link_anh_2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Váy hoa nữ",
+    "description": "Váy hoa dịu dàng",
+    "price": 450,
+    "product": "Váy thời trang",
+    "color": "Hồng",
+    "createdAt": "2023-08-14T14:15:00Z",
+    "image": "link_anh_3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Áo khoác nỉ unisex",
+    "description": "Áo khoác nỉ phong cách thể thao",
+    "price": 350,
+    "product": "Áo khoác",
+    "color": "Đen",
+    "createdAt": "2023-08-14T15:45:00Z",
+    "image": "link_anh_4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Giày thể thao nam",
+    "description": "Giày thể thao nam thoải mái và bền",
+    "price": 800,
+    "product": "Giày thể thao",
+    "color": "Đỏ",
+    "createdAt": "2023-08-14T17:30:00Z",
+    "image": "link_anh_5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Đầm dạ hội",
+    "description": "Đầm dạ hội sang trọng cho các sự kiện đặc biệt",
+    "price": 1200.0,
+    "product": "Váy dạ hội",
+    "color": "Đen",
+    "createdAt": "2023-08-15T09:00:00Z",
+    "image": "link_anh_6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Túi xách nữ da bò",
+    "description": "Túi xách nữ da bò cao cấp",
+    "price": 500.0,
+    "product": "Túi xách",
+    "color": "Nâu",
+    "createdAt": "2023-08-15T11:30:00Z",
+    "image": "link_anh_7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Áo sơ mi nữ",
+    "description": "Áo sơ mi nữ trẻ trung và thanh lịch",
+    "price": 320.0,
+    "product": "Áo sơ mi",
+    "color": "Xanh lá",
+    "createdAt": "2023-08-15T14:15:00Z",
+    "image": "link_anh_8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Quần legging thể thao",
+    "description": "Quần legging thể thao co dãn tốt",
+    "price": 180.0,
+    "product": "Quần legging",
+    "color": "Đen",
+    "createdAt": "2023-08-15T16:45:00Z",
+    "image": "link_anh_9.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Áo khoác dù nữ",
+    "description": "Áo khoác dù nữ chống nước và ấm áp",
+    "price": 750.0,
+    "product": "Áo khoác",
+    "color": "Xanh đậm",
+    "createdAt": "2023-08-15T18:30:00Z",
+    "image": "link_anh_10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Áo len cổ lọ nữ",
+    "description": "Áo len cổ lọ nữ ấm áp cho mùa đông",
+    "price": 280.0,
+    "product": "Áo len",
+    "color": "Xám",
+    "createdAt": "2023-08-16T09:00:00Z",
+    "image": "link_anh_11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Váy chữ A nữ",
+    "description": "Váy chữ A nữ dễ thương và năng động",
+    "price": 380.0,
+    "product": "Váy thời trang",
+    "color": "Xanh nhạt",
+    "createdAt": "2023-08-16T11:30:00Z",
+    "image": "link_anh_12.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Giày cao gót",
+    "description": "Giày cao gót đẹp và sang trọng",
+    "price": 950.0,
+    "product": "Giày thời trang",
+    "color": "Đen",
+    "createdAt": "2023-08-16T14:15:00Z",
+    "image": "link_anh_13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Túi xách nữ thời trang",
+    "description": "Túi xách nữ thời trang và tiện ích",
+    "price": 420.0,
+    "product": "Túi xách",
+    "color": "Xanh đậm",
+    "createdAt": "2023-08-16T16:45:00Z",
+    "image": "link_anh_14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Quần culottes nữ",
+    "description": "Quần culottes nữ thoải mái và dễ mix đồ",
+    "price": 300.0,
+    "product": "Quần thời trang",
+    "color": "Kem",
+    "createdAt": "2023-08-16T18:30:00Z",
+    "image": "link_anh_15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Áo blouse trắng",
+    "description": "Áo blouse trắng thanh lịch cho nữ",
+    "price": 220.0,
+    "product": "Áo thời trang",
+    "color": "Trắng",
+    "createdAt": "2023-08-17T09:00:00Z",
+    "image": "link_anh_16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Váy ngủ satin",
+    "description": "Váy ngủ satin mềm mại và quyến rũ",
+    "price": 150.0,
+    "product": "Đồ lót",
+    "color": "Đỏ",
+    "createdAt": "2023-08-17T11:30:00Z",
+    "image": "link_anh_17.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Giày mọi nữ",
+    "description": "Giày mọi nữ thoải mái cho mùa hè",
+    "price": 280.0,
+    "product": "Giày thời trang",
+    "color": "Beige",
+    "createdAt": "2023-08-17T14:15:00Z",
+    "image": "link_anh_18.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Áo hoodie nữ",
+    "description": "Áo hoodie nữ phong cách và ấm áp",
+    "price": 380.0,
+    "product": "Áo khoác",
+    "color": "Xám",
+    "createdAt": "2023-08-17T16:45:00Z",
+    "image": "link_anh_19.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Quần jogger nữ",
+    "description": "Quần jogger nữ thể thao và thoải mái",
+    "price": 260,
+    "product": "Quần thể thao",
+    "color": "Đen",
+    "createdAt": "2023-08-17T18:30:00Z",
+    "image": "link_anh_20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Áo dài truyền thống",
+    "description": "Áo dài truyền thống Việt Nam phối màu hiện đại",
+    "price": 580,
+    "product": "Áo dài",
+    "color": "Xanh dương",
+    "createdAt": "2023-08-18T09:00:00Z",
+    "image": "link_anh_21.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Váy xòe nữ",
+    "description": "Váy xòe nữ duyên dáng cho mùa hè",
+    "price": 320,
+    "product": "Váy thời trang",
+    "color": "Vàng",
+    "createdAt": "2023-08-18T11:30:00Z",
+    "image": "link_anh_22.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Giày thể thao nữ",
+    "description": "Giày thể thao nữ phong cách và thoải mái",
+    "price": 780,
+    "product": "Giày thể thao",
+    "color": "Hồng",
+    "createdAt": "2023-08-18T14:15:00Z",
+    "image": "link_anh_23.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Áo crop top nữ",
+    "description": "Áo crop top nữ năng động và trẻ trung",
+    "price": 180,
+    "product": "Áo thời trang",
+    "color": "Cam",
+    "createdAt": "2023-08-18T16:45:00Z",
+    "image": "link_anh_24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Quần short nữ",
+    "description": "Quần short nữ thời trang và thoải mái",
+    "price": 150,
+    "product": "Quần thể thao",
+    "color": "Xanh dương",
+    "createdAt": "2023-08-18T18:30:00Z",
+    "image": "link_anh_25.jpg"
+  }
+]

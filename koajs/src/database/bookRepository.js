@@ -1,5 +1,5 @@
 import fs from "fs";
-import { data as books } from "./books.json";
+import * as books from "./books.json";
 
 /**
  *

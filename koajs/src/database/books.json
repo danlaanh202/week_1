@@ -1,124 +1,122 @@
-{
-  "data": [
-    {
-      "id": 101,
-      "name": "Fight Club",
-      "author": "Chuck Palahniuk"
-    },
-    {
-      "id": 102,
-      "name": "Sharp Objects",
-      "author": "Gillian Flynn"
-    },
-    {
-      "id": 103,
-      "name": "Frankenstein",
-      "author": "Mary Shelley"
-    },
-    {
-      "id": 104,
-      "name": "Into The Willd",
-      "author": "Jon Krakauer"
-    },
-    {
-      "id": 150,
-      "name": "AlexandraMarks",
-      "author": "DonStokes"
-    },
-    {
-      "id": 72,
-      "name": "EudoraZboncak",
-      "author": "HelgaCassin"
-    },
-    {
-      "id": 188,
-      "name": "GeorgeLabadie",
-      "author": "CooperSchaden"
-    },
-    {
-      "id": 156,
-      "name": "JeremyVolkman",
-      "author": "LeviAbbott"
-    },
-    {
-      "id": 172,
-      "name": "YvonneAbernathy",
-      "author": "DaronAnkunding"
-    },
-    {
-      "id": 68,
-      "name": "RusselWehner",
-      "author": "CarolanneBrekke"
-    },
-    {
-      "id": 129,
-      "name": "AlbinaLegros",
-      "author": "NiaPrice"
-    },
-    {
-      "id": 86,
-      "name": "LiamUllrich",
-      "author": "AntoniaWard"
-    },
-    {
-      "id": 53,
-      "name": "BretMarquardt",
-      "author": "RoslynMueller"
-    },
-    {
-      "id": 85,
-      "name": "BertramBoehm",
-      "author": "VelvaRuecker"
-    },
-    {
-      "id": 337,
-      "name": "AudieMoen",
-      "author": "FelixSchiller"
-    },
-    {
-      "id": 57,
-      "name": "VerdieVolkman",
-      "author": "GordonWiza"
-    },
-    {
-      "id": 288,
-      "name": "MistyKunde",
-      "author": "EddHaag"
-    },
-    {
-      "id": 220,
-      "name": "AlessandraBlick",
-      "author": "AlberthaRowe"
-    },
-    {
-      "id": 385,
-      "name": "TyreeHintz",
-      "author": "DonnieSchoen"
-    },
-    {
-      "id": 221,
-      "name": "HarleyKuhlman",
-      "author": "LeilaHuel"
-    },
-    {
-      "id": 117,
-      "name": "NicklausGusikowski",
-      "author": "VivianneLowe"
-    },
-    {
-      "id": 293,
-      "name": "VeronicaFlatley",
-      "author": "MerrittParisian"
-    },
-    {
-      "id": 236,
-      "name": "JazmynConroy",
-      "author": "XavierKunze"
-    },
-    {
-      "id": 336,
-      "name": "DallinZulauf",
-      "author": "LamontKrajcik"
-    }
-  ]
-}
+[
+  {
+    "id": 101,
+    "name": "Fight Club",
+    "author": "Chuck Palahniuk"
+  },
+  {
+    "id": 102,
+    "name": "Sharp Objects",
+    "author": "Gillian Flynn"
+  },
+  {
+    "id": 103,
+    "name": "Frankenstein",
+    "author": "Mary Shelley"
+  },
+  {
+    "id": 104,
+    "name": "Into The Willd",
+    "author": "Jon Krakauer"
+  },
+  {
+    "id": 150,
+    "name": "AlexandraMarks",
+    "author": "DonStokes"
+  },
+  {
+    "id": 72,
+    "name": "EudoraZboncak",
+    "author": "HelgaCassin"
+  },
+  {
+    "id": 188,
+    "name": "GeorgeLabadie",
+    "author": "CooperSchaden"
+  },
+  {
+    "id": 156,
+    "name": "JeremyVolkman",
+    "author": "LeviAbbott"
+  },
+  {
+    "id": 172,
+    "name": "YvonneAbernathy",
+    "author": "DaronAnkunding"
+  },
+  {
+    "id": 68,
+    "name": "RusselWehner",
+    "author": "CarolanneBrekke"
+  },
+  {
+    "id": 129,
+    "name": "AlbinaLegros",
+    "author": "NiaPrice"
+  },
+  {
+    "id": 86,
+    "name": "LiamUllrich",
+    "author": "AntoniaWard"
+  },
+  {
+    "id": 53,
+    "name": "BretMarquardt",
+    "author": "RoslynMueller"
+  },
+  {
+    "id": 85,
+    "name": "BertramBoehm",
+    "author": "VelvaRuecker"
+  },
+  {
+    "id": 337,
+    "name": "AudieMoen",
+    "author": "FelixSchiller"
+  },
+  {
+    "id": 57,
+    "name": "VerdieVolkman",
+    "author": "GordonWiza"
+  },
+  {
+    "id": 288,
+    "name": "MistyKunde",
+    "author": "EddHaag"
+  },
+  {
+    "id": 220,
+    "name": "AlessandraBlick",
+    "author": "AlberthaRowe"
+  },
+  {
+    "id": 385,
+    "name": "TyreeHintz",
+    "author": "DonnieSchoen"
+  },
+  {
+    "id": 221,
+    "name": "HarleyKuhlman",
+    "author": "LeilaHuel"
+  },
+  {
+    "id": 117,
+    "name": "NicklausGusikowski",
+    "author": "VivianneLowe"
+  },
+  {
+    "id": 293,
+    "name": "VeronicaFlatley",
+    "author": "MerrittParisian"
+  },
+  {
+    "id": 236,
+    "name": "JazmynConroy",
+    "author": "XavierKunze"
+  },
+  {
+    "id": 336,
+    "name": "DallinZulauf",
+    "author": "LamontKrajcik"
+  }
+]
