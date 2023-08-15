@@ -66,11 +66,11 @@ function getProductById(id) {
 function getProductsWithFilter(limit, sort = "asc") {
   if (sort === "asc") {
     return products
-      .sort((a, b) => a.id - b.id)
+      .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
       .slice(0, limit || products.length);
   } else if (sort === "desc") {
     return products
-      .sort((a, b) => b.id - a.id)
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
       .slice(0, limit || products.length);
   } else {
     return products.slice(0, limit || products.length);
