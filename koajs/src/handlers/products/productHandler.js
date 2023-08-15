@@ -1,3 +1,4 @@
+//todo: tìm  cách dùng import em nhé 
 const {
   getProductById,
   getAllProducts,
@@ -14,7 +15,7 @@ const {
 async function getProducts(ctx) {
   try {
     const { limit, sort } = ctx.request.query;
-
+    //todo: mình tách 2 điều kiện này ra riêng nhé đôi khi viết thế này không phải th nào cũng ổn đâu .
     if (limit || sort) {
       const products = getProductsWithFilter(limit, sort);
       ctx.status = 200;
@@ -22,6 +23,7 @@ async function getProducts(ctx) {
         data: products,
       });
     }
+    //todo : sao mình là phải tách riêng thế này khi có và không có filter nhỉ ? gộp lại chung đc không ? 
     const products = getAllProducts();
     ctx.status = 200;
     return (ctx.body = {
@@ -36,6 +38,7 @@ async function getProducts(ctx) {
     };
   }
 }
+
 async function getProduct(ctx) {
   try {
     const { id } = ctx.params;

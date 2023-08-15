@@ -64,6 +64,8 @@ function getProductById(id) {
 }
 
 function getProductsWithFilter(limit, sort = "asc") {
+  //todo : tìm cách giảm bớt else if tại có thể  bỏ sót các th , tìm cách dùng mình if thôi chẳng hạn
+  // thêm nữa là anh thấy sort với slice đang dùng đi dùng lại mà lại 1 cùng 1 mục đúc có thể nào tách ra cho đỡ if else và dùng sort hoặc slice 1 đến 2 lần không ? 
   if (sort === "asc") {
     return products
       .sort((a, b) => a.id - b.id)
