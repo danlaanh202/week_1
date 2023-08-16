@@ -1,8 +1,17 @@
-import saveProducts from "../utils/saveProducts";
+import fs from "fs";
+import path from "path";
 const { data: products } = require("./products.json");
-
+const saveProducts = (data) => {
+  fs.writeFileSync(
+    path.join(__dirname, "/products.json"),
+    JSON.stringify({
+      data,
+    })
+  );
+};
 function getProducts(limit, sort) {
   const tempProducts = [...products];
+
   if (sort) {
     tempProducts =
       sort === "asc"
@@ -20,7 +29,7 @@ function getProducts(limit, sort) {
 }
 
 function createNewProduct(data) {
-  const updatedProducts = [data, ...products];
+  const updatedProducts = [...products, data];
   saveProducts(updatedProducts);
 }
 
@@ -41,16 +50,21 @@ function updateProductById(id, data) {
 }
 
 function deleteProductById(id) {
-  const tempProducts = [...products];
-  tempProducts.filter((item) => item !== parseInt(id));
+  const tempProducts = [...products].filter((item) => item.id !== parseInt(id));
   saveProducts(tempProducts);
 }
 
-function getProductById(idx) {
-  //todo : viết thành 1 hàm tổng quát cho anh nhé , để sau còn dùng đc vào nhiều chỗ khác nhau
-  const { id, name, description, price, product, color, createdAt, image } =
-    products.find((product) => product.id === idx);
-  return { id, name, description, price, product };
+function getProductById(idx, fields) {
+  // ex: http://localhost:5000/api/todoes/:id&fields=id,name,...
+  const product = products.find((product) => product.id === idx);
+  if (fields) {
+    const fieldsObj = fields.split(",").reduce((prev, key) => {
+      prev[key] = product[key];
+      return prev;
+    }, {});
+    return fieldsObj;
+  }
+  return product;
 }
 
 export {

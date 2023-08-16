@@ -25,7 +25,7 @@ async function getProducts(ctx) {
     ctx.body = {
       success: false,
       data: [],
-      error: e.message,
+      error: error.message,
     };
   }
 }
@@ -33,7 +33,8 @@ async function getProducts(ctx) {
 async function getProduct(ctx) {
   try {
     const { id } = ctx.params;
-    const product = getProductById(id);
+    const { fields } = ctx.query;
+    const product = getProductById(parseInt(id), fields);
     if (product) {
       return (ctx.body = {
         data: product,
@@ -63,7 +64,7 @@ async function createProduct(ctx) {
   } catch (error) {
     return (ctx.body = {
       success: false,
-      error: e.message,
+      error: error.message,
     });
   }
 }
@@ -87,9 +88,8 @@ async function updateProduct(ctx) {
 async function deleteProduct(ctx) {
   try {
     const { id } = ctx.params;
-    console.log(id);
     deleteProductById(id);
-    ctx.status = 204;
+    ctx.status = 200;
     return (ctx.body = {
       success: true,
     });
