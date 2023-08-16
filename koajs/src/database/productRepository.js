@@ -63,6 +63,7 @@ function deleteProductById(id) {
  * @returns {{id: number, name: string, price: number, description: string, product: string, color: string, createdAt: string, image: string} | {id: number, name: string, price: number, description: string, product: string, color: string, createdAt: string, image: string} }
  */
 function getProductByField(field, fieldData) {
+  //todo: ý anh là bảo vẫn get bằng id nhưng anh chỉ muốn lấy 1 vài fields ra ngoài chứ k lấy tất cả , ví dụ sau này có token mình sẽ không lấy token ra ngoài chawgr hạn
   return products.find((product) => product[field] === fieldData);
 }
 
