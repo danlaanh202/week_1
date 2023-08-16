@@ -1,5 +1,5 @@
 import {
-  getProductById,
+  getProductByField,
   getProducts as getProductsWithFilter,
   createNewProduct,
   updateProductById,
@@ -33,7 +33,7 @@ async function getProducts(ctx) {
 async function getProduct(ctx) {
   try {
     const { id } = ctx.params;
-    const product = getProductById(id);
+    const product = getProductByField("id", id);
     if (product) {
       return (ctx.body = {
         data: product,

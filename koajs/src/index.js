@@ -1,10 +1,10 @@
 import Koa from "koa";
 import Router from "koa-router";
 import routing from "./routes";
+import KoaBody from "koa-body";
 
-
-//todo : tham khảo cái này rồi xử dụng nhé https://www.npmjs.com/package/koa-body
 const app = new Koa();
+app.use(KoaBody);
 const router = new Router();
 routing(router);
 app.use(router.routes());
