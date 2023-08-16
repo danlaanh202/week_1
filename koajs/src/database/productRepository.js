@@ -47,6 +47,7 @@ function deleteProductById(id) {
 }
 
 function getProductById(idx) {
+  //todo : viết thành 1 hàm tổng quát cho anh nhé , để sau còn dùng đc vào nhiều chỗ khác nhau 
   const { id, name, description, price, product, color, createdAt, image } =
     products.find((product) => product.id === idx);
   // Cái này tuỳ theo mục đích sử dụng nên em không biết nên return gì nên em sẽ get vài field trong product
