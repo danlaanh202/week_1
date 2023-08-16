@@ -3,6 +3,8 @@ const postsApiUrl = rootApiUrl + "/posts";
 const commentsApiUrl = rootApiUrl + "/comments";
 const usersApiUrl = rootApiUrl + "/users";
 
+//todo : viết lại hàm getData như này nhé . Viết thế này vẫn chưa tối ưu lắm ấy . https://imgur.com/MZCDRCV
+
 const getData = async (apiUrl) => {
   try {
     const response = await fetch(apiUrl);
