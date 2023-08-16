@@ -12,12 +12,13 @@ const getData = async (resource, url = rootApiUrl) => {
     throw new Error("Something happened with url: " + apiUrl);
   }
 };
+
 const getPost = async (postId) => {
   try {
-    const getpostById = getData(`${postsApiUrl}/${postId}`);
+    const getPostById = getData(`${postsApiUrl}/${postId}`);
     const getCommentsOfPostId = getData(`${postsApiUrl}/${postId}/comments`);
     const [post, comments] = await Promise.all([
-      getpostById,
+      getPostById,
       getCommentsOfPostId,
     ]);
 
