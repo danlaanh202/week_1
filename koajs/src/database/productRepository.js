@@ -1,9 +1,6 @@
 import saveProducts from "../utils/saveProducts";
 const { data: products } = require("./products.json");
-/**
- *
- * @returns {[{name: string, price: number, id: number, description: string, product: string, color: string, createdAt: string, image: string}]}
- */
+
 function getProducts(limit, sort) {
   const tempProducts = [...products];
   if (sort) {
@@ -21,11 +18,6 @@ function getProducts(limit, sort) {
   }
   return tempProducts;
 }
-
-/**
- *
- * @param {id: number,name: string,price: number,description: string,product: string,color: string,createdAt: string,image: string}
- */
 
 function createNewProduct(data) {
   const updatedProducts = [data, ...products];
@@ -48,27 +40,24 @@ function updateProductById(id, data) {
   return updatedProduct;
 }
 
-/**
- *
- * @param id
- */
 function deleteProductById(id) {
   const tempProducts = [...products];
   tempProducts.filter((item) => item !== parseInt(id));
   saveProducts(tempProducts);
 }
-/**
- *
- * @param id
- * @returns {{id: number, name: string, price: number, description: string, product: string, color: string, createdAt: string, image: string} | {id: number, name: string, price: number, description: string, product: string, color: string, createdAt: string, image: string} }
- */
-function getProductByField(field, fieldData) {
-  //todo: ý anh là bảo vẫn get bằng id nhưng anh chỉ muốn lấy 1 vài fields ra ngoài chứ k lấy tất cả , ví dụ sau này có token mình sẽ không lấy token ra ngoài chawgr hạn
-  return products.find((product) => product[field] === fieldData);
+
+function getProductById(idx) {
+  const { id, name, description, price, product, color, createdAt, image } =
+    products.find((product) => product.id === idx);
+  // Cái này tuỳ theo mục đích sử dụng nên em không biết nên return gì nên em sẽ get vài field trong product
+  return { id, name, description, price, product };
+  // giả sử sau này có data như user = {username, password, token, dob, gender} thì có thể loại trừ các field password và token như sau:
+  // const {password, token, ...result} = user
+  // return result;
 }
 
 export {
-  getProductByField,
+  getProductById,
   getProducts,
   createNewProduct,
   updateProductById,
