@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import getSomeFields from "../helpers/utils/getSomeFields";
+import pickFields from "../helpers/utils/pickFields";
 const { data: products } = require("./products.json");
 const saveProducts = (data) => {
   fs.writeFileSync(
@@ -11,7 +11,8 @@ const saveProducts = (data) => {
   );
 };
 
-function getProducts(limit, sort) {
+function getProducts(params = {}) {
+  const { sort, limit } = params;
   const tempProducts = [...products];
 
   if (sort) {
@@ -57,11 +58,10 @@ function deleteProductById(id) {
 }
 
 function getProductById(idx, fields) {
-  // ex: http://localhost:5000/api/products/:id&fields=id&fields=name...
   const product = products.find((product) => product.id === idx);
 
   if (fields?.length > 0) {
-    return getSomeFields(product, fields);
+    return pickFields(product, fields);
   }
   return product;
 }
