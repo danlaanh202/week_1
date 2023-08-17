@@ -9,6 +9,7 @@ const saveProducts = (data) => {
     })
   );
 };
+
 function getProducts(limit, sort) {
   const tempProducts = [...products];
 
@@ -57,6 +58,7 @@ function deleteProductById(id) {
 function getProductById(idx, fields) {
   // ex: http://localhost:5000/api/todoes/:id&fields=id,name,...
   const product = products.find((product) => product.id === idx);
+  //todo: fields chỗ này em truyền string à fields nên truyền bằng array á để dùng cho nhiều chỗ với cả nên check xem là obj có field đấy không nữa nhé + tách ra thành 1 functions bỏ ở helpers ấy , sửa nốt chỗ này nha
   if (fields) {
     const fieldsObj = fields.split(",").reduce((prev, key) => {
       prev[key] = product[key];
