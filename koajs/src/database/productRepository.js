@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import getSomeFields from "../helpers/utils/getSomeFields";
 const { data: products } = require("./products.json");
 const saveProducts = (data) => {
   fs.writeFileSync(
@@ -56,15 +57,11 @@ function deleteProductById(id) {
 }
 
 function getProductById(idx, fields) {
-  // ex: http://localhost:5000/api/products/:id&fields=id,name,...
+  // ex: http://localhost:5000/api/products/:id&fields=id&fields=name...
   const product = products.find((product) => product.id === idx);
-  //todo: fields chỗ này em truyền string à fields nên truyền bằng array á để dùng cho nhiều chỗ với cả nên check xem là obj có field đấy không nữa nhé + tách ra thành 1 functions bỏ ở helpers ấy , sửa nốt chỗ này nha
-  if (fields) {
-    const fieldsObj = fields.split(",").reduce((prev, key) => {
-      prev[key] = product[key];
-      return prev;
-    }, {});
-    return fieldsObj;
+
+  if (fields?.length > 0) {
+    return getSomeFields(product, fields);
   }
   return product;
 }
