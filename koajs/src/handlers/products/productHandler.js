@@ -12,9 +12,8 @@ import {
  */
 async function getProducts(ctx) {
   try {
-    const { limit, sort } = ctx.request.query;
 
-    const products = getProductsWithFilter(limit, sort);
+    const products = getProductsWithFilter(ctx.request.query);
 
     ctx.status = 200;
     return (ctx.body = {
