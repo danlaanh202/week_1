@@ -55,7 +55,7 @@ function deleteProductById(id) {
 }
 
 function getProductById(idx, fields) {
-  // ex: http://localhost:5000/api/todoes/:id&fields=id,name,...
+  // ex: http://localhost:5000/api/products/:id&fields=id,name,...
   const product = products.find((product) => product.id === idx);
   if (fields) {
     const fieldsObj = fields.split(",").reduce((prev, key) => {
