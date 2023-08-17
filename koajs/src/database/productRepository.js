@@ -13,6 +13,7 @@ const saveProducts = (data) => {
 
 function getProducts(params = {}) {
   const { sort, limit } = params;
+
   const tempProducts = [...products];
 
   if (sort) {
