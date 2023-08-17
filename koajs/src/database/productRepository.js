@@ -14,7 +14,7 @@ const saveProducts = (data) => {
 function getProducts(params = {}) {
   const { sort, limit } = params;
 
-  const tempProducts = [...products];
+  let tempProducts = [...products];
 
   if (sort) {
     tempProducts =
@@ -46,6 +46,7 @@ function updateProductById(id, data) {
       return product;
     }
   });
+  // findIndex
   const updatedProduct = { ...foundProduct, ...data };
   tempProducts[arrayIndex] = updatedProduct;
 

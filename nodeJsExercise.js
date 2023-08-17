@@ -49,7 +49,7 @@ const getPost = async (postId) => {
 
   //  3
 
-  const result = users.map((item, index) => {
+  const result = users.map((item) => {
     const { id, name, username, email } = item;
     return {
       id,
