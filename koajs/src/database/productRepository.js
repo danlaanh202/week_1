@@ -39,17 +39,12 @@ function createNewProduct(data) {
 
 function updateProductById(id, data) {
   const tempProducts = [...products];
-  let arrayIndex;
-  const foundProduct = tempProducts.find((product, index) => {
-    if (product.id === parseInt(id)) {
-      arrayIndex = index;
-      return product;
-    }
-  });
-  // findIndex
-  const updatedProduct = { ...foundProduct, ...data };
-  tempProducts[arrayIndex] = updatedProduct;
 
+  const productIndex = tempProducts.findIndex(
+    (elem) => elem.id === parseInt(id)
+  );
+  const updatedProduct = { ...tempProducts[productIndex], ...data };
+  tempProducts[productIndex] = updatedProduct;
   saveProducts(tempProducts);
   return updatedProduct;
 }
